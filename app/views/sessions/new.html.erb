@@ -1,0 +1,35 @@
+<div class="col-xs-4 well" id="user_new">
+  
+  <h1>User Login</h1>
+  
+  <%= form_for(:session, url: login_path) do |f| %>
+    <div class="form-group">
+      <label>Email</label>
+      <%= f.text_field :email, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <%= f.password_field :password, class: "form-control" %>
+    </div>
+    <button type="submit" class="btn btn-success">Sign in</button>
+  <% end %>
+</div>
+
+<div class="col-xs-8" id="user_new_marketing">
+  <h1>Lorem ipsum dolor sit amet</h1>
+  
+  <p class="lead">Consectetur adipiscing elit. Pellentesque eleifend efficitur dolor. Etiam hendrerit lacus sed convallis laoreet. Suspendisse id posuere erat, sed semper libero. Pellentesque consectetur:</p>
+  
+  <ul>
+    <li>ligula eu erat tempus venenatis</li>
+    <li>Vestibulum ante ipsum primis in faucibus</li>
+    <li>Orci luctus et ultrices posuere cubilia</li>
+    <li>Curae; Class aptent taciti sociosqu ad</li>
+  </ul>
+  
+  <p>Litora torquent per conubia nostra, per inceptos himenaeos. Curabitur pellentesque neque ut purus posuere, id venenatis odio tincidunt. Donec vulputate sapien leo.</p>
+  
+  <blockquote>Curabitur pellentesque neque ut purus posuere, id venenatis odio tincidunt. Donec vulputate sapien leo</blockquote>
+  
+  <p>Cras a augue ut ante mollis aliquam. Sed tincidunt, odio vel rutrum elementum, turpis orci pharetra ipsum, ut imperdiet sem tortor a urna. Sed aliquam, augue lobortis dictum interdum, risus mi sodales orci, id facilisis elit velit non neque. Integer eget lectus id nulla consequat tempor accumsan nec dui. Sed luctus suscipit dui quis maximus. Cras porta lobortis leo nec sodales. Nam at nunc ut tortor convallis pellentesque. Morbi sollicitudin fermentum aliquam.</p>
+</div>
