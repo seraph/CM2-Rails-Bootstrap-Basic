@@ -10,6 +10,7 @@ class UsersController < ApplicationController
       flash[:success] = "Successfully created your account #{@user.name}"
       redirect_to root_url
     else
+      flash.now[:error] = "Failed to create your account"
       render 'new'
     end
   end

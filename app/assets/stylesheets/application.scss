@@ -21,3 +21,7 @@ h1 {
         margin: 0;
     }
 }
+
+.alert-error {
+    @extend .alert-warning;
+}
